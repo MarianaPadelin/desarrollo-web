@@ -54,15 +54,13 @@ a {
   border-radius: 10px;
 }
 
-.fondoParaParrafo{
-      background-color: rgba(128, 128, 128, 0.655);
-      padding: 5%;
-      color: white;
-      display: flex;
-      justify-content: center;
-      font-size: large;
-      
-
+.fondoParaParrafo {
+  background-color: rgba(128, 128, 128, 0.655);
+  padding: 5%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: large;
 }
 /* Vista "about" */
 
@@ -71,15 +69,12 @@ a {
   width: 15%;
 }
 
-
 /* Vista "herramientas" */
 
-.iconos{
-    width: 8%;
+.iconos {
+  width: 8%;
 }
 
-.herramientas{
-    text-align: center;
+.herramientas {
+  text-align: center;
 }
-
-
