@@ -1,24 +1,54 @@
 /* Aspecto general de la página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
+.mainBody {
   background-image: url(./backgroundImg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  height: 100vh;
+  position: relative; 
 }
 
 a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none!important;
+  color: rgb(255, 255, 255)!important;
+
 }
 
+
 .presentacion {
-  font-family: Arial, Helvetica, sans-serif;
-  color: white;
+  color: rgb(255, 255, 255);
   background-color: rgba(128, 128, 128, 0.655);
   text-align: end;
   padding: 5%;
-  margin-top: 10%;
+  margin-top: 30%;
+}
+
+
+@media only screen and (min-width: 480px){
+  .presentacion{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh; 
+    }
+}
+
+@media only screen and (min-width: 960px){
+  .presentacion{
+    margin-top: 10%;
+    height: 40vh;
+  }
+}
+.mediosContacto{
+  display: flex;
+  justify-content: end;
+  gap: 3vh; 
 }
 
 .capturas {
@@ -36,18 +66,25 @@ a {
 
 .descripcion {
   width: 70%;
+  text-align: left;
+}
+
+@media only screen and (min-width: 768px){
+  .descripcion{
+    text-align: center;
+  }
 }
 
 .botones {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   padding: 10px;
   border-radius: 10px;
 }
 
 .fondoParaParrafo {
-  background-color: rgba(128, 128, 128, 0.655);
+  background-color: rgba(199, 141, 141, 0.655);
   padding: 5%;
-  color: white;
+  color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,25 +93,57 @@ a {
 
 /* Navbar */
 
+.container-fluid{
+  display: flex;
+  gap: 5vw;
+}
+
+.navbar-collapse{
+  justify-content: end;
+}
+
 .imgNav {
   border-radius: 50%;
   border: 2px solid;
-  border-color: black;
-  width: 5%;
+  border-color: rgb(0, 0, 0);
+  width: 10%;
 }
 
-nav {
-  font-family: "Courier New", Courier, monospace;
-  font-size: larger;
-  color: white;
-  margin: 5%;
-  margin-top: 2%;
+@media only screen and (min-width: 480px){
+  .imgNav {
+    width: 8%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .imgNav {
+    width: 5%;
+  }
+}
+
+/* Páginas secundarias */
+
+.btnSide{
+  position: fixed;
   display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 40px;
+  flex-direction: column;
+  gap: 1vh;
+  margin-top: 90%;
+  margin-left: 70%;
 }
 
+@media only screen and (min-width: 480px){
+  .btnSide{
+    flex-direction: row;
+    margin-top: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px){
+  .btnSide{
+    margin-top: 40%;
+  }
+}
 /* Vista "about" */
 
 .imgAbout {
@@ -88,6 +157,4 @@ nav {
   width: 8%;
 }
 
-.herramientas {
-  text-align: center;
-}
+
