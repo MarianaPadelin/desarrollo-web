@@ -147,6 +147,14 @@ a {
   }
 }
 
+/* Vista "estudios */
+
+@media only screen and (min-width: 480px){
+  .carousel{
+    width: 75%;
+    margin: 5vw; 
+  }
+}
 
 /* Vista "about" */
 
