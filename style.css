@@ -9,8 +9,21 @@
   background-image: url(./backgroundImg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 15%;
   height: 100vh;
   position: relative; 
+}
+
+@media only screen and (min-width: 480px){
+  .mainBody{
+    background-position: 20%;
+  }
+}
+
+@media only screen and (min-width: 960px){
+  .mainBody{
+    background-position: 0%;
+  }
 }
 
 a {
@@ -65,6 +78,7 @@ a {
 }
 
 .descripcion {
+  
   width: 70%;
   text-align: left;
 }
@@ -73,12 +87,6 @@ a {
   .descripcion{
     text-align: center;
   }
-}
-
-.botones {
-  background-color: rgb(0, 0, 0);
-  padding: 10px;
-  border-radius: 10px;
 }
 
 .fondoParaParrafo {
@@ -90,6 +98,7 @@ a {
   align-items: center;
   font-size: large;
 }
+
 
 /* Navbar */
 
@@ -125,25 +134,20 @@ a {
 
 .btnSide{
   position: fixed;
+  bottom: 3vh;
+  right: 3vw; 
   display: flex;
   flex-direction: column;
   gap: 1vh;
-  margin-top: 90%;
-  margin-left: 70%;
 }
 
 @media only screen and (min-width: 480px){
   .btnSide{
     flex-direction: row;
-    margin-top: 50%;
   }
 }
 
-@media only screen and (min-width: 768px){
-  .btnSide{
-    margin-top: 40%;
-  }
-}
+
 /* Vista "about" */
 
 .imgAbout {
