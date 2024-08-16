@@ -45,9 +45,14 @@ footer {
   margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 90%;
 }
 
+@media only screen and (min-width: 960px){
+  .capturas{
+    width: 50%;
+  }
+}
 .secciones {
   display: flex;
   flex-direction: column;
