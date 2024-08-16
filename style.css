@@ -6,7 +6,7 @@
 }
 
 .mainBody {
-  background-image: url(./backgroundImg.png);
+  background-image: url(./img/mobile.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 15%;
@@ -14,14 +14,16 @@
   position: relative; 
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 500px) and (max-width: 960px) {
   .mainBody{
-    background-position: 20%;
+    background-image: url(./img/tablet.jpg);
+    position: relative;
   }
 }
 
-@media only screen and (min-width: 960px){
+@media only screen and (min-width: 961px){
   .mainBody{
+    background-image: url(./img/desktop.png);
     background-position: 0%;
   }
 }
@@ -32,39 +34,15 @@ a {
 
 }
 
-
-.presentacion {
-  color: rgb(255, 255, 255);
-  background-color: rgba(128, 128, 128, 0.655);
-  text-align: end;
-  padding: 5%;
-  margin-top: 30%;
-}
-
-
-@media only screen and (min-width: 480px){
-  .presentacion{
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vh; 
-    }
-}
-
-@media only screen and (min-width: 960px){
-  .presentacion{
-    margin-top: 10%;
-    height: 40vh;
-  }
-}
-.mediosContacto{
-  display: flex;
-  justify-content: end;
-  gap: 3vh; 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  max-height: 10vh;
 }
 
 .capturas {
+  margin-bottom: 10vh;
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -77,14 +55,15 @@ a {
   align-items: center;
 }
 
-.descripcion {
-  
-  width: 70%;
+.parrafoDescriptivo {
+  margin: 3vh 0vh;
+  width: 90%;
   text-align: left;
 }
 
-@media only screen and (min-width: 768px){
-  .descripcion{
+@media only screen and (min-width: 960px){
+  .parrafoDescriptivo{
+    width: 70%;
     text-align: center;
   }
 }
@@ -118,13 +97,13 @@ a {
   width: 10%;
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 500px) and (max-width: 960px){
   .imgNav {
     width: 8%;
   }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 961px){
   .imgNav {
     width: 5%;
   }
@@ -134,22 +113,56 @@ a {
 
 .btnSide{
   position: fixed;
-  bottom: 3vh;
+  bottom: 10vh;
   right: 3vw; 
   display: flex;
   flex-direction: column;
   gap: 1vh;
 }
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 500px){
   .btnSide{
     flex-direction: row;
   }
 }
 
+/* Vista "index */
+
+.bannerGris {
+  color: rgb(255, 255, 255);
+  background-color: rgba(128, 128, 128, 0.655);
+  text-align: end;
+  padding: 5%;
+  margin-top: 30%;
+}
+
+
+@media only screen and (min-width: 500px) and (max-width: 960px){
+  .bannerGris{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vh; 
+    }
+}
+
+@media only screen and (min-width: 961px){
+  .bannerGris{
+    margin-top: 10%;
+    height: 50vh;
+  }
+}
+
+.mediosContacto{
+  display: flex;
+  justify-content: end;
+  gap: 3vh; 
+}
+
 /* Vista "estudios */
 
-@media only screen and (min-width: 480px){
+@media only screen and (min-width: 500px){
   .carousel{
     width: 75%;
     margin: 5vw; 
