@@ -1,0 +1,8 @@
+.contactoContainer {
+  gap: 1vh;
+  padding-right: 10vw;
+}
+
+.contacto {
+  @include animacionBotones(1.1);
+}

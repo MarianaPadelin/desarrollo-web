@@ -1,0 +1,8 @@
+%bloqueFlexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+// para llamarlo, dentro de otra clase:
+// @extend %animacionBotones;
+// no se puede usar en media queries

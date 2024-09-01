@@ -1,0 +1,20 @@
+@mixin animacionNav($color, $bgColor, $width, $padding, $transformation) {
+  transition: transform 1s;
+  &:hover {
+    color: $color !important;
+    background-color: $bgColor;
+    width: $width;
+    padding: $padding;
+    transform: $transformation;
+  }
+}
+
+@mixin animacionBotones($escala) {
+  transition: transform 1s;
+  &:hover {
+    transform: scale($escala);
+  }
+}
+
+// para llamarlo, dentro de otra clase:
+// @include animacionNav(red, 50px)

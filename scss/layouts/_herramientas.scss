@@ -1,0 +1,7 @@
+.iconos {
+  width: 8%;
+  transition: transform 1s;
+  &:hover {
+    transform: scale(1.3) rotate(20deg);
+  }
+}

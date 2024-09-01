@@ -1,0 +1,26 @@
+@import "./utilities/extends";
+@import "./utilities/colors";
+@import "./utilities/mixins";
+@import "./layouts/general";
+@import "./layouts/navbar";
+@import "./layouts/index";
+@import "./layouts/about";
+@import "./layouts/estudios";
+@import "./layouts/herramientas";
+@import "./layouts/contacto";
+
+// sass --watch scss/styles.scss css/style.css
+
+// agregar otro extend
+// revisar nombres de clases
+// arreglar menu desplegable movil en about y experiencia
+// ctrl + s para tabulaciones en todas las pestañas
+
+// background-attachment : fixed -- img queda fija en el scroll
+
+// para usar con esto: padding primario, gap, margin
+
+// h1{
+//     color: $colorPrimario
+// color: nth($colores, 2)
+// }
