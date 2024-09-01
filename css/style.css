@@ -3,6 +3,16 @@
   flex-direction: column;
 }
 
+.mediosContacto, .container-fluid {
+  display: flex;
+  gap: 5vw;
+}
+
+.parrafoDescriptivo, .titulo, footer {
+  margin-top: 2vh;
+  padding: 2vh 2vw;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -21,7 +31,6 @@
 @media only screen and (min-width: 500px) and (max-width: 960px) {
   .mainBody {
     background-image: url(https://res.cloudinary.com/dvxkjikvk/image/upload/v1725200848/desarrolloWeb/fondos/tablet_ssp7c1.jpg);
-    position: relative;
   }
 }
 @media only screen and (min-width: 961px) {
@@ -40,11 +49,9 @@ footer {
   bottom: 0;
   width: 100%;
   max-height: 10vh;
-  margin-top: 1vh;
 }
 
 .capturas {
-  margin-bottom: 10vh;
   width: 90%;
 }
 
@@ -54,12 +61,11 @@ footer {
   }
 }
 .secciones {
-  gap: 40px;
+  gap: 2vh;
   align-items: center;
 }
 
 .parrafoDescriptivo {
-  margin: 3vh 0vh;
   width: 90%;
   text-align: left;
 }
@@ -78,6 +84,13 @@ footer {
   font-size: large;
 }
 
+.btn {
+  transition: transform 1s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+
 .btnSide {
   position: fixed;
   bottom: 10vh;
@@ -94,11 +107,6 @@ footer {
     flex-direction: row;
   }
 }
-.container-fluid {
-  display: flex;
-  gap: 5vw;
-}
-
 .navbar-nav {
   text-align: left;
 }
@@ -115,6 +123,7 @@ footer {
 }
 
 .nav-link {
+  width: 20vw;
   transition: transform 1s;
 }
 .nav-link:hover {
@@ -122,7 +131,7 @@ footer {
   background-color: rgba(71, 70, 70, 0.493);
   width: 50%;
   padding: 1vh;
-  transform: translate(4vh);
+  transform: translate(2vw);
 }
 
 @media only screen and (min-width: 500px) and (max-width: 960px) {
@@ -130,6 +139,7 @@ footer {
     width: 8%;
   }
   .nav-link {
+    width: 15vw;
     transition: transform 1s;
   }
   .nav-link:hover {
@@ -137,7 +147,7 @@ footer {
     background-color: rgba(240, 233, 233, 0.493);
     width: 20%;
     padding: 1vh;
-    transform: translate(4vh);
+    transform: translate(2vw);
   }
 }
 @media only screen and (min-width: 961px) {
@@ -145,6 +155,7 @@ footer {
     width: 5%;
   }
   .nav-link {
+    width: fit-content;
     transition: transform 1s;
   }
   .nav-link:hover {
@@ -152,7 +163,7 @@ footer {
     background-color: rgba(240, 233, 233, 0.493);
     width: 100%;
     padding: 1vh;
-    transform: translate(0);
+    transform: scale(1.1);
   }
 }
 .bannerGris {
@@ -162,27 +173,26 @@ footer {
   padding: 5%;
   margin-top: 30%;
   gap: 2vh;
+  min-height: 20vh;
 }
 
 @media only screen and (min-width: 500px) and (max-width: 960px) {
   .bannerGris {
     justify-content: center;
-    gap: 3vh;
     margin-top: 15%;
-    min-height: 60vh;
+    gap: 3vh;
+    min-height: 50vh;
   }
 }
 @media only screen and (min-width: 961px) {
   .bannerGris {
     margin-top: 10%;
-    height: 50vh;
     gap: 5vh;
+    min-height: 50vh;
   }
 }
 .mediosContacto {
-  display: flex;
   justify-content: end;
-  gap: 3vh;
 }
 
 .btnBanner {
@@ -197,6 +207,10 @@ footer {
 .imgAbout {
   border-radius: 50%;
   width: 15%;
+}
+
+.cv {
+  margin-bottom: 10vh;
 }
 
 @media only screen and (min-width: 500px) {
@@ -218,11 +232,8 @@ footer {
   padding-right: 10vw;
 }
 
-.contacto {
-  transition: transform 1s;
-}
 .contacto:hover {
-  transform: scale(1.1);
+  transform: translate(-3vw);
 }
 
 /*# sourceMappingURL=style.css.map */

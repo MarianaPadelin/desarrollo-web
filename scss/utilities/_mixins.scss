@@ -16,5 +16,12 @@
   }
 }
 
+@mixin propBannerGris($marginTop, $gap, $minHeight){
+  margin-top: $marginTop;
+  gap: $gap;
+  min-height: $minHeight;
+}
+
+
 // para llamarlo, dentro de otra clase:
 // @include animacionNav(red, 50px)

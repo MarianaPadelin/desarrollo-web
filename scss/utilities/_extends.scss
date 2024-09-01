@@ -3,6 +3,16 @@
   flex-direction: column;
 }
 
+%bloqueFlexRow {
+  display: flex;
+  gap: 5vw;
+}
+
+%marginPaddingGeneral{
+  margin-top: 2vh; 
+  padding: 2vh 2vw; 
+}
+
 // para llamarlo, dentro de otra clase:
-// @extend %animacionBotones;
+// @extend %claseExtend;
 // no se puede usar en media queries

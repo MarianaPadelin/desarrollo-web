@@ -4,5 +4,7 @@
 }
 
 .contacto {
-  @include animacionBotones(1.1);
+  &:hover {
+    transform: translate(-3vw);
+  }
 }

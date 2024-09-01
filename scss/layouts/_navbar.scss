@@ -1,6 +1,5 @@
 .container-fluid {
-  display: flex;
-  gap: 5vw;
+  @extend %bloqueFlexRow;
 }
 
 .navbar-nav {
@@ -19,12 +18,13 @@
 }
 
 .nav-link {
+  width: 20vw;
   @include animacionNav(
     $secondaryColor,
     $primaryLinkHoverBg,
     50%,
     1vh,
-    translate(4vh)
+    translate(2vw)
   );
 }
 
@@ -33,12 +33,13 @@
     width: 8%;
   }
   .nav-link {
+    width: 15vw;
     @include animacionNav(
       $secondaryColor,
       $secondaryLinkHoverBg,
       20%,
       1vh,
-      translate(4vh)
+      translate(2vw)
     );
   }
 }
@@ -47,12 +48,13 @@
     width: 5%;
   }
   .nav-link {
+    width: fit-content;
     @include animacionNav(
       $secondaryColor,
       $secondaryLinkHoverBg,
       100%,
       1vh,
-      translate(0)
+      scale(1.1)
     );
   }
 }
