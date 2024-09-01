@@ -10,7 +10,7 @@
 }
 
 .mainBody {
-  background-image: url(../../img/mobile.jpeg);
+  background-image: url(https://res.cloudinary.com/dvxkjikvk/image/upload/v1725200844/desarrolloWeb/fondos/mobile_pfadb3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 15%;
@@ -20,13 +20,13 @@
 
 @media only screen and (min-width: 500px) and (max-width: 960px) {
   .mainBody {
-    background-image: url(../../img/tablet.jpg);
+    background-image: url(https://res.cloudinary.com/dvxkjikvk/image/upload/v1725200848/desarrolloWeb/fondos/tablet_ssp7c1.jpg);
     position: relative;
   }
 }
 @media only screen and (min-width: 961px) {
   .mainBody {
-    background-image: url(../../img/desktop.png);
+    background-image: url(https://res.cloudinary.com/dvxkjikvk/image/upload/v1725200836/desarrolloWeb/fondos/desktop_m1ffbe.png);
     background-position: 0%;
   }
 }
