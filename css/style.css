@@ -1,11 +1,13 @@
 .bannerGris, .btnSide, .fondoParaParrafo, .secciones, .capturas {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .mediosContacto, .container-fluid {
   display: flex;
   gap: 5vw;
+  padding: 1vw;
 }
 
 .parrafoDescriptivo, .titulo, footer {
@@ -97,6 +99,7 @@ footer {
   right: 3vw;
   gap: 1vh;
   transition: transform 1s;
+  z-index: 1;
 }
 .btnSide:hover {
   transform: scale(1.2);
@@ -107,6 +110,14 @@ footer {
     flex-direction: row;
   }
 }
+.container-fluid {
+  background-color: rgba(0, 0, 0, 0.518);
+}
+
+.navbar {
+  padding-top: 0;
+}
+
 .navbar-nav {
   text-align: left;
 }
@@ -213,23 +224,82 @@ footer {
   margin-bottom: 10vh;
 }
 
+.carousel {
+  margin: 5vw;
+}
+
 @media only screen and (min-width: 500px) {
   .carousel {
     width: 75%;
-    margin: 5vw;
+    margin-bottom: 10vh;
   }
 }
 .iconos {
-  width: 8%;
+  width: 20%;
   transition: transform 1s;
 }
 .iconos:hover {
   transform: scale(1.3) rotate(20deg);
 }
 
+@media only screen and (min-width: 500px) and (max-width: 960px) {
+  .iconos {
+    width: 12%;
+  }
+}
+@media only screen and (min-width: 961px) {
+  .iconos {
+    width: 8%;
+  }
+}
 .contactoContainer {
   gap: 1vh;
   padding-right: 10vw;
+}
+
+.card {
+  border: 2px solid;
+  border-color: rgb(8, 8, 49);
+  color: rgb(8, 8, 49);
+}
+
+.card-img-top {
+  height: 70vh;
+}
+
+.card-body {
+  padding-top: 0;
+}
+
+.collapse.show {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-text {
+  max-width: 50vw;
+}
+
+.button-container {
+  display: flex;
+  gap: 1vw;
+}
+
+.card-container {
+  display: grid;
+  gap: 5vw;
+  margin-bottom: 10vh;
+}
+
+@media only screen and (min-width: 961px) {
+  .card-container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(3, 30vw);
+    gap: 1vw;
+    margin-bottom: 10vh;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

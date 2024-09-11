@@ -1,5 +1,10 @@
 .container-fluid {
   @extend %bloqueFlexRow;
+  background-color: rgba(0, 0, 0, 0.518);
+}
+
+.navbar{
+  padding-top:0;
 }
 
 .navbar-nav {

@@ -1,11 +1,13 @@
 %bloqueFlexColumn {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 %bloqueFlexRow {
   display: flex;
   gap: 5vw;
+  padding: 1vw; 
 }
 
 %marginPaddingGeneral{
