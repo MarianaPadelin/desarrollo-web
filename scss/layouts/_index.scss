@@ -2,7 +2,6 @@
   @extend %bloqueFlexColumn;
   color: $primaryColor;
   background-color: $secondaryBgColor;
-  text-align: end;
   padding: 5%;
   @include propBannerGris(30%, 2vh, 20vh);
 }

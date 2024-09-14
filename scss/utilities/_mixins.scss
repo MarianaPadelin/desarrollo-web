@@ -1,5 +1,5 @@
 @mixin animacionNav($color, $bgColor, $width, $padding, $transformation) {
-  transition: transform 1s;
+  transition: transform 0.5s;
   &:hover {
     color: $color !important;
     background-color: $bgColor;

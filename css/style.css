@@ -1,11 +1,12 @@
-.bannerGris, .btnSide, .fondoParaParrafo, .secciones, .capturas {
+.collapseCardInfo.show, .bannerGris, .btnSide, .fondoParaParrafo, .secciones, .capturas {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.mediosContacto, .container-fluid {
+.button-container, .mediosContacto, .container-fluid {
   display: flex;
+  justify-content: center;
   gap: 5vw;
   padding: 1vw;
 }
@@ -74,7 +75,6 @@ footer {
 
 @media only screen and (min-width: 960px) {
   .parrafoDescriptivo {
-    width: 70%;
     text-align: center;
   }
 }
@@ -135,11 +135,11 @@ footer {
 
 .nav-link {
   width: 20vw;
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 .nav-link:hover {
   color: rgb(28, 27, 27) !important;
-  background-color: rgba(71, 70, 70, 0.493);
+  background-color: rgba(240, 233, 233, 0.493);
   width: 50%;
   padding: 1vh;
   transform: translate(2vw);
@@ -151,7 +151,7 @@ footer {
   }
   .nav-link {
     width: 15vw;
-    transition: transform 1s;
+    transition: transform 0.5s;
   }
   .nav-link:hover {
     color: rgb(28, 27, 27) !important;
@@ -167,7 +167,8 @@ footer {
   }
   .nav-link {
     width: fit-content;
-    transition: transform 1s;
+    border-radius: 10px;
+    transition: transform 0.5s;
   }
   .nav-link:hover {
     color: rgb(28, 27, 27) !important;
@@ -179,8 +180,7 @@ footer {
 }
 .bannerGris {
   color: rgb(217, 217, 217);
-  background-color: rgba(128, 128, 128, 0.655);
-  text-align: end;
+  background-color: rgba(128, 128, 128, 0.755);
   padding: 5%;
   margin-top: 30%;
   gap: 2vh;
@@ -254,7 +254,6 @@ footer {
 }
 .contactoContainer {
   gap: 1vh;
-  padding-right: 10vw;
 }
 
 .card {
@@ -264,17 +263,11 @@ footer {
 }
 
 .card-img-top {
-  height: 70vh;
+  aspect-ratio: 3/4;
 }
 
 .card-body {
   padding-top: 0;
-}
-
-.collapse.show {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .card-text {
@@ -282,7 +275,6 @@ footer {
 }
 
 .button-container {
-  display: flex;
   gap: 1vw;
 }
 

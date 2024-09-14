@@ -1,10 +1,10 @@
 .container-fluid {
   @extend %bloqueFlexRow;
-  background-color: rgba(0, 0, 0, 0.518);
+  background-color: $navBgColor;
 }
 
-.navbar{
-  padding-top:0;
+.navbar {
+  padding-top: 0;
 }
 
 .navbar-nav {
@@ -26,7 +26,7 @@
   width: 20vw;
   @include animacionNav(
     $secondaryColor,
-    $primaryLinkHoverBg,
+    $linkHoverBg,
     50%,
     1vh,
     translate(2vw)
@@ -41,7 +41,7 @@
     width: 15vw;
     @include animacionNav(
       $secondaryColor,
-      $secondaryLinkHoverBg,
+      $linkHoverBg,
       20%,
       1vh,
       translate(2vw)
@@ -54,12 +54,7 @@
   }
   .nav-link {
     width: fit-content;
-    @include animacionNav(
-      $secondaryColor,
-      $secondaryLinkHoverBg,
-      100%,
-      1vh,
-      scale(1.1)
-    );
+    border-radius: 10px;
+    @include animacionNav($secondaryColor, $linkHoverBg, 100%, 1vh, scale(1.1));
   }
 }
