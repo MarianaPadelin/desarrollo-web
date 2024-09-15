@@ -1,5 +1,22 @@
 .contactoContainer {
-  gap: 1vh;
+  @include propBannerGris(3vh, 1vh, 80vh);
 }
 
+@media only screen and (min-width: 961px) {
+  .contactoContainer {
+    @include propBannerGris(10vh, 1vh, 20vh);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 
+.celu_mail {
+  @extend %bloqueFlexColumn;
+}
+
+@media only screen and (min-width: 961px) {
+  .celu_mail {
+    align-items: start;
+  }
+}

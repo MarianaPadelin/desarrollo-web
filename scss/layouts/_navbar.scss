@@ -3,6 +3,10 @@
   background-color: $navBgColor;
 }
 
+.navbar-brand {
+  width: min-content;
+}
+
 .navbar {
   padding-top: 0;
 }
@@ -19,7 +23,8 @@
   border-radius: 50%;
   border: 2px solid;
   border-color: $secondaryColor;
-  width: 10%;
+  width: 15vw;
+  margin-right: 2vh;
 }
 
 .nav-link {
@@ -35,7 +40,7 @@
 
 @media only screen and (min-width: 500px) and (max-width: 960px) {
   .imgNav {
-    width: 8%;
+    width: 8vw;
   }
   .nav-link {
     width: 15vw;
@@ -50,7 +55,7 @@
 }
 @media only screen and (min-width: 961px) {
   .imgNav {
-    width: 5%;
+    width: 5vw;
   }
   .nav-link {
     width: fit-content;

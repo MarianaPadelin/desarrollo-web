@@ -8,6 +8,14 @@
       href="https://res.cloudinary.com/dvxkjikvk/image/upload/v1725200844/desarrolloWeb/fondos/mobile_pfadb3.jpg"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Página de contacto de Mariana Padelin, con email de contacto, número de teléfono celular y formulario de contacto."
+    />
+    <meta
+      name="keywords"
+      content="contacto, email, celular, whatsapp, busqueda laboral, fullstack, frontend, backend, developer, desarrollo web, Mariana Padelin"
+    />
     <title>Contacto</title>
 
     <link
@@ -22,15 +30,12 @@
     <header>
       <nav class="navbar navbar-dark navbar-expand-lg">
         <div class="container-fluid">
-          
-          <img
-            class="imgNav"
-            alt="Logo"
-            src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1716212310/foto_de_perfil_xot1ub.jpg"
-          />
-
-          <a class="navbar-brand fw-bold" href="../index.html"
-            >Mariana Padelin</a
+          <a class="navbar-brand fw-bold" href="../index.html">
+            <img
+              class="imgNav"
+              alt="Logo"
+              src="https://res.cloudinary.com/dvxkjikvk/image/upload/v1716212310/foto_de_perfil_xot1ub.jpg"
+            />Mariana Padelin</a
           >
           <button
             class="navbar-toggler"
@@ -79,22 +84,49 @@
 
     <main>
       <section class="bannerGris contactoContainer">
-        <h2>Medios de contacto</h2>
-        <hr />
-        <p>
-          <a
-            href="https://wa.me/5411111111?text=Buenos días. Vi tu portfolio y estoy interesado en información sobre"
-            target="_blank"
-          >
-            <p>+54 1111-1111</p>
-          </a>
-          <a
-            href="https://mail.google.com/mail/?view=cm&to=marianapadelin@gmail.com"
-            target="_blank"
-          >
-            <p>mail@gmail.com</p>
-          </a>
-        </p>
+        <div>
+          <h1>Medios de contacto</h1>
+          <hr />
+          <div class="celu_mail">
+            <a
+              href="https://wa.me/5411111111?text=Buenos días. Vi tu portfolio y estoy interesado en información sobre"
+              target="_blank"
+            >
+              <p>+54 1111-1111</p>
+            </a>
+            <a
+              href="https://mail.google.com/mail/?view=cm&to=marianapadelin@gmail.com"
+              target="_blank"
+            >
+              <p>mail@gmail.com</p>
+            </a>
+          </div>
+        </div>
+
+        <form>
+          <div class="mb-1">
+            <label for="direccionEmail" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="direccionEmail"
+              aria-describedby="emailHelp"
+            />
+            <div id="emailHelp" class="form-text">
+              Me contactaré a la brevedad
+            </div>
+          </div>
+
+          <div class="mb-1">
+            <label for="mensaje" class="form-label">Escriba su consulta</label>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              aria-label="With textarea"
+            ></textarea>
+          </div>
+          <button class="mb-1 btn btn-dark">Enviar</button>
+        </form>
       </section>
     </main>
     <script
